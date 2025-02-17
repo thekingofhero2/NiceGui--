@@ -2,3 +2,5 @@ nicegui
 pywebview
 networkx
 sqlalchemy
+pywin32
+pysubs2
