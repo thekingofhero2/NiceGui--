@@ -4,3 +4,4 @@ networkx
 sqlalchemy
 pywin32
 pysubs2
+Mecab
