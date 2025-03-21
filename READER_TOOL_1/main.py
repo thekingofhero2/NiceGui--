@@ -93,10 +93,11 @@ class MainTool:
         #     self.play_next()
     def show_sub_title(self,):
         with ui.column().classes("w-full"):
+            ui.label("中文相关说明：")
+            ui.input().classes("w-full h-[60px]").bind_value_from(self.dict_m,"current_cn")#.bind_visibility_from(self.dict_m,"show_current")
             ui.label("外文原文：")
             ui.input().classes("w-full h-[60px]").bind_value_from(self.dict_m,"current_other").bind_visibility_from(self.dict_m,"show_current")
-            ui.label("中文相关说明：")
-            ui.input().classes("w-full h-[60px]").bind_value_from(self.dict_m,"current_cn").bind_visibility_from(self.dict_m,"show_current")
+            
         
     def play_next(self):
         "播放下一曲"
@@ -191,4 +192,4 @@ def index():
     maintool.show_video()
 
 #ui.run(host='0.0.0.0',native=True,reload=True,window_size=(320, 720))
-ui.run(native=True,reload=True,window_size=(640, 720))
+ui.run(native=True,reload=True,window_size=(640, 800))
